@@ -139,6 +139,7 @@
         <option value="devise:views" />
         <option value="factory_bot:model" />
         <option value="generator" />
+        <option value="gritter:locale" />
         <option value="helper" />
         <option value="integration_test" />
         <option value="jbuilder" />
@@ -201,6 +202,7 @@
         <option value="devise:views" />
         <option value="factory_bot:model" />
         <option value="generator" />
+        <option value="gritter:locale" />
         <option value="helper" />
         <option value="integration_test" />
         <option value="jbuilder" />

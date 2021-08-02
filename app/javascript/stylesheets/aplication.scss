@@ -1,13 +1,25 @@
-
+@import "~bootstrap/scss/bootstrap";
 .custom-nav {
   margin-top: 15px;
 }
-
 .logo {
   margin-top: 35px;
 }
 .jumbotron {
   margin-top: 20px;
 }
+.notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(135,216,211,0.85);
+  padding: 2.5rem;
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
 
-@import "~bootstrap/scss/bootstrap";
