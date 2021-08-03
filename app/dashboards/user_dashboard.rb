@@ -4,8 +4,8 @@ class UserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     posts: Field::HasMany,
     id: Field::Number,
-    email: Field::String,
-    password: Field::String,
+    email: Field::String.with_options(searchable: true ),
+    encrypted_password: Field::String,
     first_name: Field::String,
     last_name: Field::String,
     type: Field::String,
@@ -34,7 +34,7 @@ class UserDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = %i[
     posts
     email
-    password
+    encrypted_password
     first_name
     last_name
   ].freeze

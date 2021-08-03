@@ -4,8 +4,8 @@ class AdminUserDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     posts: Field::HasMany,
     id: Field::Number,
-    email: Field::String,
-    password: Field::String,
+    email: Field::String.with_options(searchable: true ),
+    encrypted_password: Field::String,
     remember_created_at: Field::DateTime,
     first_name: Field::String,
     last_name: Field::String,
@@ -34,7 +34,7 @@ class AdminUserDashboard < Administrate::BaseDashboard
 
   FORM_ATTRIBUTES = %i[
     email
-    password
+    encrypted_password
     first_name
     last_name
     type
